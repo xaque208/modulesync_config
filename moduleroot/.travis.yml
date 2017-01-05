@@ -1,5 +1,6 @@
 ---
 sudo: false
+dist: trusty
 language: ruby
 cache: bundler
 <%- if !@configs.nil? and @configs.has_key?('addons') -%>
