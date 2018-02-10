@@ -72,24 +72,4 @@ branches:
   - master
   - /^v\d/
 notifications:
-  email: <%= @configs['email'] %>
-<% if @configs['irc'] -%>
-  irc:
-    on_success: <%= @configs['irc']['on_success'] %>
-    on_failure: <%= @configs['irc']['on_failure'] %>
-    channels:
-<%   @configs['irc']['channels'].each do |channel| -%>
-      - "<%= channel %>"
-<%   end -%>
-<% end -%>
-deploy:
-  provider: puppetforge
-  user: <%= @configs['user'] %>
-  password:
-    secure: "<%= @configs['secure'] -%>"
-  on:
-    tags: true
-    # all_branches is required to use tags
-    all_branches: true
-    # Only publish the build marked with "DEPLOY_TO_FORGE"
-    condition: "$DEPLOY_TO_FORGE = yes"
+  email: false
