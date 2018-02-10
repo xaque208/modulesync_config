@@ -12,12 +12,12 @@
   - rvm: 2.4.0
     env: PUPPET_VERSION="~> 4.0" CHECK=rubocop
   - rvm: 2.4.0
-    env: PUPPET_VERSION="~> 4.0" CHECK=build DEPLOY_TO_FORGE=yes
+    env: PUPPET_VERSION="~> 4.0" CHECK=build
 Gemfile:
   required:
     ':test':
       - gem: puppetlabs_spec_helper
-        version: '~> 1.2.2'
+        version: '~> 2.1.1'
       - gem: rspec-puppet
         version: '~> 2.5'
       - gem: rspec-puppet-facts
@@ -63,11 +63,6 @@ Gemfile:
       - gem: travis
       - gem: travis-lint
       - gem: guard-rake
-    ':system_tests':
-      - gem: beaker-rspec
-      - gem: serverspec
-      - gem: beaker-puppet_install_helper
-        require: false
 Rakefile:
   default_disabled_lint_checks:
   - 'relative'
