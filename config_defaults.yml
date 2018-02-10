@@ -78,5 +78,6 @@ Rakefile:
   default_enabled_rake_targets:
   - 'metadata_lint'
   - 'release_checks'
-...
+.env.sh: {}
+Jenkinsfile: {}
 # vim: syntax=yaml
