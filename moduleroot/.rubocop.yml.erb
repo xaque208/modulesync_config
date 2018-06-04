@@ -549,3 +549,9 @@ Style/FormatStringToken:
 # are located.
 RSpec/FilePath:
   Enabled: false
+
+<% @configs['cops'].each do |k, v| -%>
+<%= k %>:
+  Enabled: <%= v %>
+<% end -%>
+
