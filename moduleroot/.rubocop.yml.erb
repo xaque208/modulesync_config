@@ -18,6 +18,14 @@ AllCops:
     - <%= x %>
     <%- end -%>
     <%- end -%>
+
+<% if @configs.keys.include? 'cops' -%>
+<% @configs['cops'].each do |k, v| -%>
+<%= k %>:
+  Enabled: <%= v %>
+<% end -%>
+<% end -%>
+
 Lint/ConditionPosition:
   Enabled: True
 
@@ -549,9 +557,3 @@ Style/FormatStringToken:
 # are located.
 RSpec/FilePath:
   Enabled: false
-
-<% @configs['cops'].each do |k, v| -%>
-<%= k %>:
-  Enabled: <%= v %>
-<% end -%>
-
