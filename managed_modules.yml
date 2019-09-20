@@ -3,8 +3,8 @@
 - puppet-bacula
 - puppet-bsd
 - puppet-groupmembership
-# - puppet-jail
-# - puppet-ldapquery
+- puppet-jail
+- puppet-ldapquery
 - puppet-nsd
 - puppet-openldap
 - puppet-openvpn
