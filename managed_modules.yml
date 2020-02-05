@@ -1,19 +1,21 @@
 ---
+# - puppet-ldapquery
+# - puppet-groupmembership
+
+# - puppet-pxe
+# - puppet-pkgng
+# - puppet-jail
+# - puppet-poudriere
+# - puppet-unbound
+# - puppet-nsd
+
 - puppet-account
 - puppet-bacula
 - puppet-bsd
-- puppet-groupmembership
-- puppet-jail
-- puppet-ldapquery
-- puppet-nsd
 - puppet-openldap
 - puppet-openvpn
-- puppet-pkgng
 - puppet-pf
-- puppet-poudriere
 - puppet-python
-- puppet-pxe
 - puppet-ssh
 - puppet-sudo
-- puppet-unbound
 # vim: syntax=yaml
