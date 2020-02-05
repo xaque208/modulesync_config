@@ -18,6 +18,14 @@ AllCops:
     - <%= x %>
     <%- end -%>
     <%- end -%>
+
+<% if @configs.keys.include? 'cops' -%>
+<% @configs['cops'].each do |k, v| -%>
+<%= k %>:
+  Enabled: <%= v %>
+<% end -%>
+<% end -%>
+
 Lint/ConditionPosition:
   Enabled: True
 

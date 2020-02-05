@@ -3,5 +3,9 @@ git_base: 'git@github.com:'
 namespace: xaque208
 branch: modulesync
 message: "Update from xaque208 modulesync_config"
+pr_labels:
+  - TOOLING
+  - MAINTENANCE
+  - MODULESYNC
 ...
 # vim: syntax=yaml
